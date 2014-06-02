@@ -1,0 +1,11 @@
+02/06/14
+DW - Create index page for vis with script appendices
+AC - Create endpoint to retreive high level nodes/graph JSON
+AC - Create endpoint to retrieve nodes of specific beers or foods JSON
+AC - Create static version of the high level vis
+AC - Implement mouseover effects
+DW - Create static drill down vis graph for specific beer/food
+DW - Create additional drill down on level 2 nodes
+JG - Assemble beer style list
+JG - Think up super nodes
+JG - Create dummy list of food
