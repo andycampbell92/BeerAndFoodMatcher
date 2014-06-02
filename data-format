@@ -1,0 +1,4 @@
+Data format
+{
+	1: {name:"name1", superNode: true, type:"beer/food", links:[]},
+}
