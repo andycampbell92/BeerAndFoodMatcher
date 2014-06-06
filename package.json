@@ -1,0 +1,11 @@
+{
+  	"name": "beer-and-food-matcher",
+  	"description": "find the perfect combination of food and beer!",
+  	"homepage": "https://github.com/andycampbell92/BeerAndFoodMatcher",
+	"dependencies": {
+		"restify":      	"*",
+		"express":			"*",
+		"nodeunit": 		"*",
+		"node-rest-client": "*"
+	}
+}
