@@ -1,5 +1,6 @@
 # Express to host our index file
 express = require 'express'
+restify = require 'restify'
 
 class Server
 	constructor: ->
