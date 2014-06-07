@@ -1,0 +1,446 @@
+[
+  {
+    "name":"Abbey Ale",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Altbier",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Amber/Red Ale",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"American-Style Amber Lager",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"American-Style Brown Ale",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"American-Style India Pale Ale",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"American-Style Light Lager",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"American-Style Pale Ale",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"American-Style Pilsener",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"American-Style Stout",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"American-Style Wheat Beer",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Baltic Porter",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Barley Wine",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Belgian-Style Blonde Ale",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Belgian-Style Dark Strong Ale",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Belgian-Style Pale Ale",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Belgian-Style Pale Strong Ale",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Berliner-Weisse",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Bi�re de Garde",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Bitter",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Black India Pale Ale",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Bock",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Bohemian-Style Pilsener",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"California Common",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Cream Ale",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Doppelbock",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Dortmunder",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Dubbel",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Dunkel",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Dunkel Weizen",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Eisbock",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"English-Style Brown Ale",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"English-Style India Pale Ale",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"English-Style Pale Ale",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Extra Special Bitter",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Flanders Oud Bruin or Oud Red Ale",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Fruit Beer",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Fruit Lambic",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Fruit Wheat Beer",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"German-Style Pilsener",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Golden or Blonde Ale",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Gose",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Gueuze",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Hefeweizen",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Helles",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Honey Beer",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Imperial India Pale Ale",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Imperial Porter",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Imperial Red Ale",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Imperial Stout",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"International-Style Pilsener",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Irish-Style Dry Stout",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Irish-Style Red Ale",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"K�lsch",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Lambic",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Maibock",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Malt Liquor",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"M�rzenbier",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Mild",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Oatmeal Stout",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Porter",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Pumpkin Beer",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Quadrupel",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Rauchbier",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Rye Beer",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Saison",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Schwarzbier",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Smoked Porter",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Sweet Stout or Cream Stout",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Tripel",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Vienna-Style Lager",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Wee Heavy",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Weizenbock",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  },
+  {
+    "name":"Witbier",
+    "superNode":true,
+    "type":"beer",
+    "links":[]
+  }
+]
