@@ -5,7 +5,8 @@
 	"dependencies": {
 		"restify":      	"*",
 		"express":			"*",
-		"nodeunit": 		"*",
-		"node-rest-client": "*"
+		"mocha":			"*",
+		"supertest":		"*",
+		"should":			"*"
 	}
 }
