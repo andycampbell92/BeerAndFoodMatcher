@@ -15,22 +15,26 @@ describe 'RestSevice', ->
 				.expect('Content-Type', /json/)
 				.expect(200)
 				.end (err, res) ->
+					responseData = JSON.parse res.body
 					# This will throw if request fails or expects are not fufilled
 					if err
 						throw err
 					# We should have data
-					Object.keys(res.body).length.should.not.equal 0
-					for key in res.body
+					Object.keys(responseData).length.should.not.equal 0
+					for key in Object.keys(responseData)
+						console.log key
 						# Our key should be a number
-						key.should.be.type 'number'
+						key.should.be.type 'string'
 						# Beer names should be strings
-						res.body[key].name.should.be.type 'string'
+						responseData[key].should.have.property('name').with.type 'string'
 						# Our super node or not identifyer should be boolean
-						res.body[key].superNode.should.be.type 'boolean'
+						responseData[key].should.have.property('superNode').with.type 'boolean'
 						# Our beer type should be string
-						res.body[key].type.should.be.type 'string'
+						responseData[key].should.have.property('type').with.type 'string'
 						# Our links to other nodes should be an array
-						Array.isArray(res.body[key].links).should.equal true
+						responseData[key].should.have.property 'links'
+						Array.isArray(responseData[key].links).should.equal true
 						# Every item in the link array should be a number
-						for link in res.body[key].links
+						for link in responseData[key].links
 							link.should.be.type 'number'
+					done()

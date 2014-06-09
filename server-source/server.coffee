@@ -5,13 +5,25 @@ restify = require 'restify'
 class Server
 	constructor: ->
 		@_setupHTMLServer()
+		@_setupRESTServer()
 
 	_setupHTMLServer: ->
-		@app = express()
-		@app.use express.static __dirname + '/'
+		# Host folder containing index.html
+		@webServer = express()
+		@webServer.use express.static __dirname + '/'
+
+	_getFirstLevelData: (req, res, next) ->
+		res.header 'Content-Type', 'json'
+		res.send JSON.stringify {1: {}}
+
+	_setupRESTServer: ->
+		# Host our rest server
+		@RESTServer = restify.createServer {name: 'BeerAndFoodMatcherV1.0'}
+		@RESTServer.get '/getData', @_getFirstLevelData
 
 	start: ->
-		@app.listen 80
+		@webServer.listen 80
+		@RESTServer.listen 8080
 
 server = new Server()
 server.start()

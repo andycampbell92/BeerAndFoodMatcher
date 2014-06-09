@@ -16,32 +16,29 @@
       address = '/getData';
       return it('Should have a correctly structured json object', function(done) {
         return request(this.url).get(address).expect('Content-Type', /json/).expect(200).end(function(err, res) {
-          var key, link, _i, _len, _ref, _results;
+          var key, link, responseData, _i, _j, _len, _len1, _ref, _ref1;
+          responseData = JSON.parse(res.body);
           if (err) {
             throw err;
           }
-          Object.keys(res.body).length.should.not.equal(0);
-          _ref = res.body;
-          _results = [];
+          Object.keys(responseData).length.should.not.equal(0);
+          _ref = Object.keys(responseData);
           for (_i = 0, _len = _ref.length; _i < _len; _i++) {
             key = _ref[_i];
-            key.should.be.type('number');
-            res.body[key].name.should.be.type('string');
-            res.body[key].superNode.should.be.type('boolean');
-            res.body[key].type.should.be.type('string');
-            Array.isArray(res.body[key].links).should.equal(true);
-            _results.push((function() {
-              var _j, _len1, _ref1, _results1;
-              _ref1 = res.body[key].links;
-              _results1 = [];
-              for (_j = 0, _len1 = _ref1.length; _j < _len1; _j++) {
-                link = _ref1[_j];
-                _results1.push(link.should.be.type('number'));
-              }
-              return _results1;
-            })());
+            console.log(key);
+            key.should.be.type('string');
+            responseData[key].should.have.property('name')["with"].type('string');
+            responseData[key].should.have.property('superNode')["with"].type('boolean');
+            responseData[key].should.have.property('type')["with"].type('string');
+            responseData[key].should.have.property('links');
+            Array.isArray(responseData[key].links).should.equal(true);
+            _ref1 = responseData[key].links;
+            for (_j = 0, _len1 = _ref1.length; _j < _len1; _j++) {
+              link = _ref1[_j];
+              link.should.be.type('number');
+            }
           }
-          return _results;
+          return done();
         });
       });
     });
