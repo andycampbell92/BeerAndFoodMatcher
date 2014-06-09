@@ -1,446 +1,446 @@
-[
-  {
+{
+  "1":{
     "name":"Abbey Ale",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "2":{
     "name":"Altbier",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "3":{
     "name":"Amber/Red Ale",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "4":{
     "name":"American-Style Amber Lager",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "5":{
     "name":"American-Style Brown Ale",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "6":{
     "name":"American-Style India Pale Ale",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "7":{
     "name":"American-Style Light Lager",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "8":{
     "name":"American-Style Pale Ale",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "9":{
     "name":"American-Style Pilsener",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "10":{
     "name":"American-Style Stout",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "11":{
     "name":"American-Style Wheat Beer",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "12":{
     "name":"Baltic Porter",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "13":{
     "name":"Barley Wine",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "14":{
     "name":"Belgian-Style Blonde Ale",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "15":{
     "name":"Belgian-Style Dark Strong Ale",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "16":{
     "name":"Belgian-Style Pale Ale",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "17":{
     "name":"Belgian-Style Pale Strong Ale",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "18":{
     "name":"Berliner-Weisse",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "19":{
     "name":"Bi�re de Garde",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "20":{
     "name":"Bitter",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "21":{
     "name":"Black India Pale Ale",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "22":{
     "name":"Bock",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "23":{
     "name":"Bohemian-Style Pilsener",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "24":{
     "name":"California Common",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "25":{
     "name":"Cream Ale",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "26":{
     "name":"Doppelbock",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "27":{
     "name":"Dortmunder",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "28":{
     "name":"Dubbel",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "29":{
     "name":"Dunkel",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "30":{
     "name":"Dunkel Weizen",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "31":{
     "name":"Eisbock",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "32":{
     "name":"English-Style Brown Ale",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "33":{
     "name":"English-Style India Pale Ale",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "34":{
     "name":"English-Style Pale Ale",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "35":{
     "name":"Extra Special Bitter",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "36":{
     "name":"Flanders Oud Bruin or Oud Red Ale",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "37":{
     "name":"Fruit Beer",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "38":{
     "name":"Fruit Lambic",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "39":{
     "name":"Fruit Wheat Beer",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "40":{
     "name":"German-Style Pilsener",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "41":{
     "name":"Golden or Blonde Ale",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "42":{
     "name":"Gose",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "43":{
     "name":"Gueuze",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "44":{
     "name":"Hefeweizen",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "45":{
     "name":"Helles",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "46":{
     "name":"Honey Beer",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "47":{
     "name":"Imperial India Pale Ale",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "48":{
     "name":"Imperial Porter",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "49":{
     "name":"Imperial Red Ale",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "50":{
     "name":"Imperial Stout",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "51":{
     "name":"International-Style Pilsener",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "52":{
     "name":"Irish-Style Dry Stout",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "53":{
     "name":"Irish-Style Red Ale",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "54":{
     "name":"K�lsch",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "55":{
     "name":"Lambic",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "56":{
     "name":"Maibock",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "57":{
     "name":"Malt Liquor",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "58":{
     "name":"M�rzenbier",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "59":{
     "name":"Mild",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "60":{
     "name":"Oatmeal Stout",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "61":{
     "name":"Porter",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "62":{
     "name":"Pumpkin Beer",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "63":{
     "name":"Quadrupel",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "64":{
     "name":"Rauchbier",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "65":{
     "name":"Rye Beer",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "66":{
     "name":"Saison",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "67":{
     "name":"Schwarzbier",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "68":{
     "name":"Smoked Porter",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "69":{
     "name":"Sweet Stout or Cream Stout",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "70":{
     "name":"Tripel",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "71":{
     "name":"Vienna-Style Lager",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "72":{
     "name":"Wee Heavy",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "73":{
     "name":"Weizenbock",
     "superNode":true,
     "type":"beer",
     "links":[]
   },
-  {
+  "74":{
     "name":"Witbier",
     "superNode":true,
     "type":"beer",
     "links":[]
   }
-]
+}

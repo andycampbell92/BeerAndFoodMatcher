@@ -22,7 +22,6 @@ describe 'RestSevice', ->
 					# We should have data
 					Object.keys(responseData).length.should.not.equal 0
 					for key in Object.keys(responseData)
-						console.log key
 						# Our key should be a number
 						key.should.be.type 'string'
 						# Beer names should be strings

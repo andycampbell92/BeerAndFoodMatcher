@@ -25,7 +25,6 @@
           _ref = Object.keys(responseData);
           for (_i = 0, _len = _ref.length; _i < _len; _i++) {
             key = _ref[_i];
-            console.log(key);
             key.should.be.type('string');
             responseData[key].should.have.property('name')["with"].type('string');
             responseData[key].should.have.property('superNode')["with"].type('boolean');

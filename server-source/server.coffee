@@ -1,6 +1,7 @@
 # Express to host our index file
 express = require 'express'
 restify = require 'restify'
+fs 		= require 'fs'
 
 class Server
 	constructor: ->
@@ -14,7 +15,9 @@ class Server
 
 	_getFirstLevelData: (req, res, next) ->
 		res.header 'Content-Type', 'json'
-		res.send JSON.stringify {1: {}}
+		file = __dirname + '/styles.json'
+		fs.readFile file, 'utf8', (err, data) ->
+			res.send data
 
 	_setupRESTServer: ->
 		# Host our rest server
