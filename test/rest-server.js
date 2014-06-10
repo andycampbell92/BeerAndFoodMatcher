@@ -53,7 +53,7 @@
         })(this));
       });
     });
-    return describe('Getting a database entry (beer, food, beer style) by an ID', function() {
+    describe('Getting a database entry (beer, food, beer style) by an ID', function() {
       before(function(done) {
         this.server = new Server();
         return done();
@@ -90,6 +90,14 @@
           return done();
         });
       });
+      it('Should reject when supplied with an incorrectly formatted ID', function(done) {
+        return this.server._getEntryById("invalid").then(function(value) {
+          throw value;
+        }, function(err) {
+          (err === null).should.be["false"];
+          return done();
+        });
+      });
       it('Should return correctly formatted object when give correct ID as a string', function(done) {
         return this.server._getEntryById("5395ba367b5c62a002b8dc51").then((function(_this) {
           return function(doc) {
@@ -104,13 +112,107 @@
       return it('Should return object when give correct ID as an objectID', function(done) {
         return this.server._getEntryById(mongojs.ObjectId("5395ba367b5c62a002b8dc4b")).then((function(_this) {
           return function(doc) {
-            _this.checkEntryFormatPreJSON(doc);
             doc.should.have.type('object');
+            _this.checkEntryFormatPreJSON(doc);
             return done();
           };
         })(this), function(err) {
           throw err;
         });
+      });
+    });
+    return describe('Get multiple database entries (beer, food, beer style) from array of ID\'s', function() {
+      before(function(done) {
+        this.server = new Server();
+        return done();
+      });
+      it('Should fail if given something other than an array', function(done) {
+        return this.server._getListOfEntriesById("entry").then((function(_this) {
+          return function(value) {
+            throw value;
+          };
+        })(this), (function(_this) {
+          return function(err) {
+            (err === null).should.be["false"];
+            return done();
+          };
+        })(this));
+      });
+      it('Should fail if one (or more) of the ID\'s is invalid', function(done) {
+        return this.server._getListOfEntriesById(["5395ba357b5c62a002b8dc0b", "invalid"]).then((function(_this) {
+          return function(value) {
+            throw value;
+          };
+        })(this), (function(_this) {
+          return function(err) {
+            (err === null).should.be["false"];
+            return done();
+          };
+        })(this));
+      });
+      it('Should fail if one (or more) of the ID\'s does not exist', function(done) {
+        return this.server._getListOfEntriesById(["5395ba357b5c62a002b8dc1b", "5395ba357b5c62a002g8dc0a"]).then((function(_this) {
+          return function(value) {
+            throw value;
+          };
+        })(this), (function(_this) {
+          return function(err) {
+            (err === null).should.be["false"];
+            return done();
+          };
+        })(this));
+      });
+      it('Should fail if given an empty list', function(done) {
+        return this.server._getListOfEntriesById([]).then((function(_this) {
+          return function(value) {
+            throw value;
+          };
+        })(this), (function(_this) {
+          return function(err) {
+            (err === null).should.be["false"];
+            return done();
+          };
+        })(this));
+      });
+      it('Should return an array of valid objects given a list of valid ID\'s as strings', function(done) {
+        return this.server._getListOfEntriesById(["5395ba357b5c62a002b8dc0b", "5395ba357b5c62a002b8dc0a", "5395ba357b5c62a002b8dc09"]).then((function(_this) {
+          return function(docs) {
+            var doc, _i, _len;
+            for (_i = 0, _len = docs.length; _i < _len; _i++) {
+              doc = docs[_i];
+              doc.should.have.type('object');
+              _this.checkEntryFormatPreJSON(doc);
+            }
+            return done();
+          };
+        })(this), (function(_this) {
+          return function(err) {
+            (err === null).should.be["false"];
+            throw err;
+          };
+        })(this));
+      });
+      return it('Should return an array of valid objects given a list of valid ID\'s as objectId\'s', function(done) {
+        var objectIdList;
+        objectIdList = [mongojs.ObjectId("5395ba357b5c62a002b8dc0b", mongojs.ObjectId("5395ba357b5c62a002b8dc0a", mongojs.ObjectId("5395ba357b5c62a002b8dc09")))];
+        return this.server._getListOfEntriesById(objectIdList).then((function(_this) {
+          return function(docs) {
+            var doc, _i, _len;
+            console.log('resolve');
+            for (_i = 0, _len = docs.length; _i < _len; _i++) {
+              doc = docs[_i];
+              console.log('d');
+              doc.should.have.type('object');
+              _this.checkEntryFormatPreJSON(doc);
+            }
+            return done();
+          };
+        })(this), (function(_this) {
+          return function(err) {
+            (err === null).should.be["false"];
+            throw err;
+          };
+        })(this));
       });
     });
   });

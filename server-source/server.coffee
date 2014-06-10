@@ -28,7 +28,11 @@ class Server
 	_getEntryById: (id) ->
 		deferred = Q.defer()
 		if typeof id == 'string'
-			id = mongojs.ObjectId id
+			try
+				id = mongojs.ObjectId id
+			catch err
+				deferred.reject err
+			
 		if typeof id != 'object' or id == null
 			deferred.reject 'Type of id must be string or ObjectId'
 
@@ -44,6 +48,35 @@ class Server
 
 		return deferred.promise
 
+	_getListOfEntriesById: (idList) ->
+		deferred = Q.defer()
+		if not Array.isArray idList
+			deferred.reject 'The id list given was not an array'
+		else if idList.length == 0
+			deferred.reject 'The id list must not be empty'
+		else
+			convertedList = []
+			try
+				for id in idList
+					if typeof id == 'string'
+						id = mongojs.ObjectId id
+
+					if typeof id != 'object' or id == null
+						throw 'One or more of the ID\'s provided was not a string/objectId or was null'
+					else
+						convertedList.push id
+			catch err
+				deferred.reject err
+
+			@db.styles.find {_id: {$in: convertedList}}, (err, docs) ->
+				if err
+					deferred.reject err
+				else if docs.length != convertedList.length
+					deferred.reject((convertedList.length - docs.length) + " of the ID's provided could not be found in the database")
+				else
+					deferred.resolve docs
+
+		return deferred.promise
 
 
 
