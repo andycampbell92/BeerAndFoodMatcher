@@ -52,6 +52,52 @@ describe 'RestSevice', ->
 
 					done()
 
+	describe 'Get a fully expanded node given a ID', ->
+		address = '/getData'
+		it 'Should have a correctly structured json object including link objects', (done) ->
+			args = '/5395ba367b5c62a002b8dc52'
+			request @url
+				.get address + args
+				.expect('Content-Type', /json/)
+				.expect(200)
+				.end (err, res) =>
+					node = JSON.parse res.body
+					# This will throw if request fails or expects are not fufilled
+					if err
+						throw err
+
+					@checkEntryFormatPostJSON node
+					for linkedNode in node.links
+						@checkEntryFormatPostJSON linkedNode
+
+					done()
+
+		it 'Should have a correctly structured json object when given an ID without links', (done) ->
+			args = '/5395ba367b5c62a002b8dc3c'
+			request @url
+				.get address + args
+				.expect('Content-Type', /json/)
+				.expect(200)
+				.end (err, res) =>
+					node = JSON.parse res.body
+					# This will throw if request fails or expects are not fufilled
+					if err
+						throw err
+
+					@checkEntryFormatPostJSON node
+					done()
+
+		it 'Should fail if given a non existant id', (done) ->
+			args = '/9395ba357b5c62a002b8dc0b'
+			request @url
+				.get address + args
+				.expect('Content-Type', /json/)
+				.expect(200)
+				.end (err, res) =>
+					(err == null).should.be.false
+					if err
+						done()
+
 	describe 'Getting a database entry (beer, food, beer style) by an ID', ->
 		before (done) ->
 			@server = new Server()
@@ -155,7 +201,7 @@ describe 'RestSevice', ->
 					@checkEntryFormatPreJSON doc
 				done()
 			, (err) =>
-				(err == null).should.be.false
+				(err == null).should.be.true
 				throw err
 		
 		it 'Should return an array of valid objects given a list of valid ID\'s as objectId\'s', (done) ->
@@ -167,5 +213,29 @@ describe 'RestSevice', ->
 					@checkEntryFormatPreJSON doc
 				done()
 			, (err) =>
-				(err == null).should.be.false
+				(err == null).should.be.true
+				throw err
+
+	describe 'Expands the links from ID\'s to the objects that they represent', ->
+		before (done) ->
+			@server = new Server()
+			done()
+
+		it 'Should return a set of embedded documents when given a document with links', (done) ->
+			doc = {	
+				_id: 'name not resolved',
+				name: 'testName',
+				superNode: true,
+				type: 'beer',
+				links: ["5395ba357b5c62a002b8dc0b", "5395ba357b5c62a002b8dc0a", "5395ba357b5c62a002b8dc09"]
+			}
+
+			@server._resolveLinks(doc)
+			.then (doc) =>
+				for embDoc in doc.links
+					embDoc.should.have.type 'object'
+					@checkEntryFormatPreJSON embDoc
+				done()
+			, (err) =>
+				(err == null).should.be.true
 				throw err

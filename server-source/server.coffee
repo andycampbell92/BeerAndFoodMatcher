@@ -15,7 +15,7 @@ class Server
 		@webServer = express()
 		@webServer.use express.static __dirname + '/'
 
-	_getFirstLevelData: (req, res, next) =>
+	_getFirstLevelDataREST: (req, res, next) =>
 		res.header 'Content-Type', 'json'
 		@db.nodes.find {superNode:true}, (err, docs) =>
 		    if err
@@ -39,6 +39,22 @@ class Server
 		    				res.send 400, "Failed to resolve links"
 		    	if counter == 0
 		    		res.send JSON.stringify resolvedDocs
+
+	_getDataByIdREST: (req, res, next) =>
+		res.header 'Content-Type', 'json'
+		@_getEntryById(req.params.id)
+		.then (doc) => 
+			if doc.links.length == 0
+				res.send 200, JSON.stringify doc
+			else 
+				@_resolveLinks(doc)
+				.then (doc) ->
+					res.send 200, JSON.stringify doc
+				, (err) ->
+					res.send 400, err
+		, (err) ->
+			res.send 400, err
+
 
 	_getEntryById: (id) ->
 		deferred = Q.defer()
@@ -107,7 +123,8 @@ class Server
 	_setupRESTServer: ->
 		# Host our rest server
 		@RESTServer = restify.createServer {name: 'BeerAndFoodMatcherV1.0'}
-		@RESTServer.get '/getData', @_getFirstLevelData
+		@RESTServer.get '/getData', @_getFirstLevelDataREST
+		@RESTServer.get '/getData/:id', @_getDataByIdREST
 
 	_setupDatabase: ->
 		@db = mongojs 'beerandfooddb', ['nodes']
