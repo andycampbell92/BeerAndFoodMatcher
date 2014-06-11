@@ -162,9 +162,7 @@ describe 'RestSevice', ->
 			objectIdList = [mongojs.ObjectId "5395ba357b5c62a002b8dc0b", mongojs.ObjectId "5395ba357b5c62a002b8dc0a", mongojs.ObjectId "5395ba357b5c62a002b8dc09"]
 			@server._getListOfEntriesById(objectIdList)
 			.then (docs) =>
-				console.log 'resolve'
 				for doc in docs
-					console.log 'd'
 					doc.should.have.type 'object'
 					@checkEntryFormatPreJSON doc
 				done()

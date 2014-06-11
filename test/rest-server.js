@@ -198,10 +198,8 @@
         return this.server._getListOfEntriesById(objectIdList).then((function(_this) {
           return function(docs) {
             var doc, _i, _len;
-            console.log('resolve');
             for (_i = 0, _len = docs.length; _i < _len; _i++) {
               doc = docs[_i];
-              console.log('d');
               doc.should.have.type('object');
               _this.checkEntryFormatPreJSON(doc);
             }

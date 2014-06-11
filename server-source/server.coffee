@@ -17,13 +17,28 @@ class Server
 
 	_getFirstLevelData: (req, res, next) =>
 		res.header 'Content-Type', 'json'
-		@db.styles.find (err, docs) ->
+		@db.nodes.find {superNode:true}, (err, docs) =>
 		    if err
-		    	res.send(400, err)
+		    	res.send 400, err 
 		    else if docs.length == 0
-		    	res.send(400, "No Styles found")
+		    	res.send 400, "No Styles found"
 		    else
-		    	res.send JSON.stringify docs
+		    	counter = docs.length
+		    	resolvedDocs = []
+		    	for doc in docs
+		    		if doc.links.length == 0
+		    			resolvedDocs.push doc
+		    			counter--
+		    		else
+			    		@_resolveLinks(doc).then (resolvedDoc) ->
+			    			resolvedDocs.push resolvedDoc
+			    			counter--
+			    			if counter == 0
+			    				res.send JSON.stringify resolvedDocs
+		    			, (err) ->
+		    				res.send 400, "Failed to resolve links"
+		    	if counter == 0
+		    		res.send JSON.stringify resolvedDocs
 
 	_getEntryById: (id) ->
 		deferred = Q.defer()
@@ -37,7 +52,7 @@ class Server
 			deferred.reject 'Type of id must be string or ObjectId'
 
 		else
-			@db.styles.findOne {_id:id}, (err, doc) ->
+			@db.nodes.findOne {_id:id}, (err, doc) ->
 				if err
 					deferred.reject err
 				else if doc == null
@@ -46,6 +61,15 @@ class Server
 					# If there were no errors call the callback with the document
 					deferred.resolve doc
 
+		return deferred.promise
+
+	_resolveLinks: (doc) ->
+		deferred = Q.defer()
+		@_getListOfEntriesById(doc.links).then (links) ->
+			doc.links = links
+			deferred.resolve doc
+		, (err) ->
+			deferred.reject err
 		return deferred.promise
 
 	_getListOfEntriesById: (idList) ->
@@ -68,7 +92,7 @@ class Server
 			catch err
 				deferred.reject err
 
-			@db.styles.find {_id: {$in: convertedList}}, (err, docs) ->
+			@db.nodes.find {_id: {$in: convertedList}}, (err, docs) ->
 				if err
 					deferred.reject err
 				else if docs.length != convertedList.length
@@ -86,7 +110,7 @@ class Server
 		@RESTServer.get '/getData', @_getFirstLevelData
 
 	_setupDatabase: ->
-		@db = mongojs 'beerandfooddb', ['styles']
+		@db = mongojs 'beerandfooddb', ['nodes']
 
 	start: ->
 		@webServer.listen 80
