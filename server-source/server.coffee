@@ -17,6 +17,8 @@ class Server
 
 	_getFirstLevelDataREST: (req, res, next) =>
 		res.header 'Content-Type', 'json'
+		res.header "Access-Control-Allow-Origin", "*"
+		res.header "Access-Control-Allow-Headers", "X-Requested-With"
 		@db.nodes.find {superNode:true}, (err, docs) =>
 		    if err
 		    	res.send 400, err 
@@ -42,6 +44,8 @@ class Server
 
 	_getDataByIdREST: (req, res, next) =>
 		res.header 'Content-Type', 'json'
+		res.header "Access-Control-Allow-Origin", "*"
+		res.header "Access-Control-Allow-Headers", "X-Requested-With"
 		@_getEntryById(req.params.id)
 		.then (doc) => 
 			if doc.links.length == 0

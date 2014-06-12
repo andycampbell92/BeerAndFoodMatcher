@@ -2,3 +2,4 @@ node_modules
 server.js
 tests.js
 run-database.bat
+beer-and-food-client-api.js
