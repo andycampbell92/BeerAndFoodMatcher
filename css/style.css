@@ -18,6 +18,15 @@ svg.canvas{
 	height: 1000px;
 }
 
+rect.centre-column{
+	stroke: #FFFFFF;
+}
+
+text.centre-column{
+	stroke:	#FFFFFF;
+	fill:	#FFFFFF;
+}
+
 #footer {
 	position: absolute;
 	bottom: 0;
