@@ -28,7 +28,8 @@ var ready = function(){
 
                     newNode.append("text")
                     		.text(function(d){return node.name})
-                    		.attr("class", "centre-column");
+                    		.attr("class", "centre-column")
+                    		.attr("transform", "translate(15,15)");
 
                     superNodes.push(newNode);
 	 			};
