@@ -16,7 +16,7 @@
 { "_id" : { "$oid" : "5395ba357b5c62a002b8dc18" }, "name" : "Belgian-Style Pale Ale", "superNode" : true, "type" : "beer", "links" : [] }
 { "_id" : { "$oid" : "5395ba357b5c62a002b8dc19" }, "name" : "Belgian-Style Pale Strong Ale", "superNode" : true, "type" : "beer", "links" : [] }
 { "_id" : { "$oid" : "5395ba357b5c62a002b8dc1a" }, "name" : "Berliner-Weisse", "superNode" : true, "type" : "beer", "links" : [] }
-{ "_id" : { "$oid" : "5395ba357b5c62a002b8dc1b" }, "name" : "Bi�re de Garde", "superNode" : true, "type" : "beer", "links" : [] }
+{ "_id" : { "$oid" : "5395ba357b5c62a002b8dc1b" }, "name" : "Bière de Garde", "superNode" : true, "type" : "beer", "links" : [] }
 { "_id" : { "$oid" : "5395ba357b5c62a002b8dc1c" }, "name" : "Bitter", "superNode" : true, "type" : "beer", "links" : [ { "$oid" : "5398b95c4090dc3c0f2823a8" }, { "$oid" : "5398b95c4090dc3c0f2823a9" }, { "$oid" : "5398b95c4090dc3c0f2823aa" }, { "$oid" : "5398b95c4090dc3c0f2823ab" }, { "$oid" : "5398b95c4090dc3c0f2823ac" } ] }
 { "_id" : { "$oid" : "5395ba357b5c62a002b8dc1d" }, "name" : "Black India Pale Ale", "superNode" : true, "type" : "beer", "links" : [] }
 { "_id" : { "$oid" : "5395ba357b5c62a002b8dc1e" }, "name" : "Bock", "superNode" : true, "type" : "beer", "links" : [] }
@@ -51,7 +51,7 @@
 { "_id" : { "$oid" : "5395ba367b5c62a002b8dc3b" }, "name" : "International-Style Pilsener", "superNode" : true, "type" : "beer", "links" : [] }
 { "_id" : { "$oid" : "5395ba367b5c62a002b8dc3c" }, "name" : "Irish-Style Dry Stout", "superNode" : true, "type" : "beer", "links" : [] }
 { "_id" : { "$oid" : "5395ba367b5c62a002b8dc3d" }, "name" : "Irish-Style Red Ale", "superNode" : true, "type" : "beer", "links" : [] }
-{ "_id" : { "$oid" : "5395ba367b5c62a002b8dc3e" }, "name" : "K�lsch", "superNode" : true, "type" : "beer", "links" : [] }
+{ "_id" : { "$oid" : "5395ba367b5c62a002b8dc3e" }, "name" : "Kölsch", "superNode" : true, "type" : "beer", "links" : [] }
 { "_id" : { "$oid" : "5395ba367b5c62a002b8dc3f" }, "name" : "Lambic", "superNode" : true, "type" : "beer", "links" : [] }
 { "_id" : { "$oid" : "5395ba367b5c62a002b8dc40" }, "name" : "Maibock", "superNode" : true, "type" : "beer", "links" : [] }
 { "_id" : { "$oid" : "5395ba367b5c62a002b8dc41" }, "name" : "Malt Liquor", "superNode" : true, "type" : "beer", "links" : [] }

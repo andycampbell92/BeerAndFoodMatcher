@@ -37,13 +37,28 @@ var ready = function(){
 	 		return superNodes
 	 	}
 	 	var drawEdgeNodes = function(svg, data, columnData){
+	 		var i =22;
+	 		var jumped = false;
+	 		var x = 500;
 	 		data.forEach(function(superNode){
 	 			superNode.links.forEach(function(edgeNode){
 	 				columnData[edgeNode._id] = {data:edgeNode};
+	 				i++;
+	 				if(i>44 && jumped==false){
+	 					jumped=true;
+	 					i+=22;
+	 					x+=100;
+	 				}
+
 	 				var newNode = svg.append("g")
-	 					.attr("transform", "translate(10, 20)");
+	 					.attr("transform", "translate(400,200)")
+	 					.attr("transform", "translate("+ (Math.cos(2*Math.PI/data.length*i)*300+x) +", " + (Math.sin(2*Math.PI/data.length*i)*900 +600) + ")");
+				        //.attr("transform", function(d) {
+            			//	console.log(d);
+            			//	return "rotate(" + (d.x - 90) + ")translate(" + d.y + ")";
+        				//});
 	 				newNode.append("circle")
-	 					.attr("r", 40)
+	 					.attr("r", 5)
 	 					.attr("class", "edge-node");
 
 	 				newNode.append("text")
