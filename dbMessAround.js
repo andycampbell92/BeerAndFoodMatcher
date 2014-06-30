@@ -19,5 +19,13 @@ name:name
 }, function(err, doc){
 console.log(err);
 console.log(doc);
+
 })
 }
+
+
+
+var all;
+db.nodes.find(function(err, data){
+all = data;
+});

@@ -1,0 +1,1 @@
+"C:\Program Files\MongoDB 2.6 Standard\bin\mongoexport.exe" --db beerandfooddb --collection nodes --out db-backup.json --journal

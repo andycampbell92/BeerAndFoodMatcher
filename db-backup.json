@@ -72,47 +72,47 @@
 { "_id" : { "$oid" : "5395ba367b5c62a002b8dc50" }, "name" : "Wee Heavy", "superNode" : true, "type" : "beer", "links" : [] }
 { "_id" : { "$oid" : "5395ba367b5c62a002b8dc51" }, "name" : "Weizenbock", "superNode" : true, "type" : "beer", "links" : [] }
 { "_id" : { "$oid" : "5395ba367b5c62a002b8dc52" }, "name" : "Witbier", "superNode" : true, "type" : "beer", "links" : [ { "$oid" : "5398b95c4090dc3c0f2823c5" }, { "$oid" : "5398b95c4090dc3c0f2823c6" }, { "$oid" : "5398b95c4090dc3c0f2823c7" } ] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f28239c" }, "name" : "Meat stews", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f28239d" }, "name" : "Truffles", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f28239e" }, "name" : "Panna cotta", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f28239f" }, "name" : "Port-Salut", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823a0" }, "name" : "Roast pork", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823a1" }, "name" : "Smoked sausage", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823a2" }, "name" : "Gouda", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823a3" }, "name" : "Salad", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823a4" }, "name" : "Sushi", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823a5" }, "name" : "Buffalo mozzarella", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823a6" }, "name" : "Stilton", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823a7" }, "name" : "Chocolate hazelnut torte", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823a8" }, "name" : "Roast Chicken", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823a9" }, "name" : "Fish and chips", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823aa" }, "name" : "Lancashire cheese", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823ab" }, "name" : "Leicester cheese", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823ac" }, "name" : "Oatmeal cookies", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823ad" }, "name" : "Carrot Cake", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823ae" }, "name" : "Gorgonzola", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823af" }, "name" : "Ginger spice cake", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823b0" }, "name" : "Cheddar", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823b1" }, "name" : "Pumpkin flan", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823b2" }, "name" : "Bratwurst", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823b3" }, "name" : "Shortbread", "superNode" : false, "type" : "food", "links" : [] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f28239c" }, "name" : "Meat stews", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba357b5c62a002b8dc09" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f28239d" }, "name" : "Truffles", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba367b5c62a002b8dc3a" }, { "$oid" : "5395ba357b5c62a002b8dc09" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f28239e" }, "name" : "Panna cotta", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba357b5c62a002b8dc09" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f28239f" }, "name" : "Port-Salut", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba357b5c62a002b8dc0b" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823a0" }, "name" : "Roast pork", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba357b5c62a002b8dc0d" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823a1" }, "name" : "Smoked sausage", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba357b5c62a002b8dc0d" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823a2" }, "name" : "Gouda", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba367b5c62a002b8dc3a" }, { "$oid" : "5395ba357b5c62a002b8dc0d" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823a3" }, "name" : "Salad", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba367b5c62a002b8dc34" }, { "$oid" : "5395ba357b5c62a002b8dc13" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823a4" }, "name" : "Sushi", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba367b5c62a002b8dc34" }, { "$oid" : "5395ba357b5c62a002b8dc13" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823a5" }, "name" : "Buffalo mozzarella", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba357b5c62a002b8dc13" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823a6" }, "name" : "Stilton", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba357b5c62a002b8dc15" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823a7" }, "name" : "Chocolate hazelnut torte", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba357b5c62a002b8dc15" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823a8" }, "name" : "Roast Chicken", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba357b5c62a002b8dc1c" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823a9" }, "name" : "Fish and chips", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba357b5c62a002b8dc1c" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823aa" }, "name" : "Lancashire cheese", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba357b5c62a002b8dc1c" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823ab" }, "name" : "Leicester cheese", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba357b5c62a002b8dc1c" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823ac" }, "name" : "Oatmeal cookies", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba357b5c62a002b8dc1c" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823ad" }, "name" : "Carrot Cake", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba357b5c62a002b8dc29" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823ae" }, "name" : "Gorgonzola", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba357b5c62a002b8dc29" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823af" }, "name" : "Ginger spice cake", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba357b5c62a002b8dc29" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823b0" }, "name" : "Cheddar", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba357b5c62a002b8dc2a" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823b1" }, "name" : "Pumpkin flan", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba357b5c62a002b8dc2a" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823b2" }, "name" : "Bratwurst", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba367b5c62a002b8dc30" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823b3" }, "name" : "Shortbread", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba367b5c62a002b8dc30" } ] }
 { "_id" : { "$oid" : "5398b95c4090dc3c0f2823b4" }, "name" : "Salad", "superNode" : false, "type" : "food", "links" : [] }
 { "_id" : { "$oid" : "5398b95c4090dc3c0f2823b5" }, "name" : "Sushi", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823b6" }, "name" : "Weisswurst", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823b7" }, "name" : "Trifle", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823b8" }, "name" : "Key lime pie", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823b9" }, "name" : "Grilled lamb", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823ba" }, "name" : "Caramel cheesecake", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823bb" }, "name" : "Crème brulee", "superNode" : false, "type" : "food", "links" : [] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823b6" }, "name" : "Weisswurst", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba367b5c62a002b8dc34" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823b7" }, "name" : "Trifle", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba367b5c62a002b8dc34" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823b8" }, "name" : "Key lime pie", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba367b5c62a002b8dc34" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823b9" }, "name" : "Grilled lamb", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba367b5c62a002b8dc37" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823ba" }, "name" : "Caramel cheesecake", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba367b5c62a002b8dc37" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823bb" }, "name" : "Crème brulee", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba367b5c62a002b8dc37" } ] }
 { "_id" : { "$oid" : "5398b95c4090dc3c0f2823bc" }, "name" : "Gouda", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823bd" }, "name" : "Parmesan", "superNode" : false, "type" : "food", "links" : [] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823bd" }, "name" : "Parmesan", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba367b5c62a002b8dc3a" } ] }
 { "_id" : { "$oid" : "5398b95c4090dc3c0f2823be" }, "name" : "Truffles", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823bf" }, "name" : "Pork", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823c0" }, "name" : "Sausage", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823c1" }, "name" : "Biscotti", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823c2" }, "name" : "Gruyere", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823c3" }, "name" : "Espresso cake", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823c4" }, "name" : "Profiteroles", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823c5" }, "name" : "Mussels", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823c6" }, "name" : "Mascarpone", "superNode" : false, "type" : "food", "links" : [] }
-{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823c7" }, "name" : "Lemon panna cotta", "superNode" : false, "type" : "food", "links" : [] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823bf" }, "name" : "Pork", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba367b5c62a002b8dc42" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823c0" }, "name" : "Sausage", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba367b5c62a002b8dc42" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823c1" }, "name" : "Biscotti", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba367b5c62a002b8dc42" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823c2" }, "name" : "Gruyere", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba367b5c62a002b8dc45" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823c3" }, "name" : "Espresso cake", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba367b5c62a002b8dc4d" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823c4" }, "name" : "Profiteroles", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba367b5c62a002b8dc4d" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823c5" }, "name" : "Mussels", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba367b5c62a002b8dc52" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823c6" }, "name" : "Mascarpone", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba367b5c62a002b8dc52" } ] }
+{ "_id" : { "$oid" : "5398b95c4090dc3c0f2823c7" }, "name" : "Lemon panna cotta", "superNode" : false, "type" : "food", "links" : [ { "$oid" : "5395ba367b5c62a002b8dc52" } ] }
