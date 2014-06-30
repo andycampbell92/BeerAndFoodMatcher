@@ -33,7 +33,7 @@ describe 'RestSevice', ->
 
 		done()
 
-	describe 'First level of beer styles and links', ->
+	describe 'Should get first level of beer styles and links', ->
 		address = '/getData'
 		it 'Should have a correctly structured json object', (done) ->
 			request @url
@@ -52,7 +52,32 @@ describe 'RestSevice', ->
 
 					done()
 
-	describe 'Get a fully expanded node given a ID', ->
+	describe 'All links should link back to this object', ->
+		address = '/getData'
+		it 'Should have a correctly structured json object', (done) ->
+			request @url
+				.get address
+				.expect('Content-Type', /json/)
+				.expect(200)
+				.end (err, res) =>
+					responseData = JSON.parse res.body
+
+					# This will throw if request fails or expects are not fufilled
+					if err
+						throw err
+
+					for el in responseData
+						for link in el.links
+							if link.links.indexOf(el._id) == -1
+								console.log "Problem with links"
+								console.log el
+								console.log link
+								throw "Link did not link back to this object"
+
+					done()
+
+
+	describe 'Should get a fully expanded node given a ID', ->
 		address = '/getData'
 		it 'Should have a correctly structured json object including link objects', (done) ->
 			args = '/5395ba367b5c62a002b8dc52'

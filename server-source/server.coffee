@@ -13,7 +13,7 @@ class Server
 	_setupHTMLServer: ->
 		# Host folder containing index.html
 		@webServer = express()
-		@webServer.use express.static __dirname + '/'
+		@webServer.use express.static __dirname + '/public/'
 
 	_getFirstLevelDataREST: (req, res, next) =>
 		res.header 'Content-Type', 'json'
